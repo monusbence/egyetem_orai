@@ -271,7 +271,7 @@ int nap, ho, sz=0;
    printf("\n");
    
   }
-*/
+
    int i,j;
   int n;
   printf("Add meg az n-t! : ");
@@ -286,6 +286,148 @@ int nap, ho, sz=0;
    
   }
   
+ int i = 1;
+ while (i<=12)
+ {
+   printf("%d,",i);
+   i++;
+}
 
+int j =1;
+do
+{
+   printf("%d-",j);
+   j++;
+} while (j<=10);
+
+int i = 0;
+int n;
+printf("Add meg az n-t! : ");
+scanf("%d", &n);
+while (i <= n)
+{
+   printf("O,");
+   i++;
+}
+
+int i = 0;
+int n;
+printf("Add meg az n-t! : ");
+scanf("%d", &n);
+do
+{
+   printf("O,");
+   i++;
+} while (i <= n);
+
+
+//printf("Add meg az n-t! : ");
+//scanf("%d", &n);
+int n;
+do
+{
+   printf("Add meg az n-t! : ");
+scanf("%d", &n);
+} while (n != 0);
+printf("Program vége!");
+
+
+int n;
+int sz = 0;
+do
+{
+   printf("Add meg az n-t! : ");
+scanf("%d", &n);
+if (n != 0 && n % 2 == 0)
+{
+   sz++;
+}
+
+} while (n != 0);
+printf("Párosok száma: %d", sz);
+
+int n;
+printf("Add meg az n-t! : ");
+scanf("%d", &n);
+int seged = 2;
+while (n != 0)
+{
+   if (seged % 2 == 0)
+   {
+      printf("%d, ",seged);
+      seged+=2;
+   }
+   n--;
+}
+
+//do-while
+int ár;
+int összeg = 0;
+do
+{
+   printf("Adj meg egx árat-t! : ");
+   scanf("%d", &ár);
+   összeg+=ár;
+
+} while (ár != 0);
+printf("Teljes ár = %d", összeg);
+
+//while
+int ár;
+int összeg = 0;
+printf("Adj meg egy árat-t! : ");
+scanf("%d", &ár);
+
+while (ár != 0)
+{
+    összeg+=ár;
+   printf("Adj meg egy árat-t! : ");
+   scanf("%d", &ár);
   
+}
+printf("Teljes ár = %d", összeg);
+
+int bekert;
+int seged = 1;
+int osszeg = 0;
+printf("Adj meg egy számot! : ");
+   scanf("%d", &bekert);
+while (bekert >= seged)
+{
+   osszeg+=bekert;
+   bekert--;
+}
+printf("Az összes szám összege %d-tol %d-ig, %d", seged,bekert,osszeg);
+
+
+
+int i,j;
+for ( i = 1; i <=10; i++)
+{
+   for ( j = 0; j <= 10; j++)
+   {
+      printf("%2d*%2d=%2d ",j,i,i*j);
+   }
+   printf("\n");
+   
+}
+*/
+int i,j;
+i = 1;
+while (i <=10)
+{
+   j=1;
+   while (j<=10)
+   {
+      printf("%2d*%2d=%2d ",j,i,i*j);
+      j++;
+   }
+   printf("\n");
+   i++;
+   
+}
+
+
+
+
 }
